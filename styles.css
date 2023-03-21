@@ -23,6 +23,8 @@ body {
   background-image: url(img/Background.png);
   background-repeat: no-repeat; /*pra n repetir a imagem*/
   background-size: contain; /*pegar todo o tamanho do container, no caso a section*/
+  align-items: center;
+  text-align: center;
 }
 
 .container {
@@ -33,11 +35,11 @@ body {
 .container__botao {
   background-color: var(--botao-azul);
   border-radius: 5px;
-    text-decoration: none; /*tirando o sublinhado da frase*/
+  text-decoration: none; /*tirando o sublinhado da frase*/
   padding: 1em; /*tamanho da fonte*/
   color: var(--branco-principal);
-
   display: block; /*ocupando o bloco todo*/
+  margin-bottom: 1em;
 }
 .botao_secundario {
   background-color: transparent;
@@ -47,3 +49,31 @@ body {
   font-size: 12px;
   color: var(--cinza-secundario);
 }
+
+.container__titulo {
+  font-size: 28px;
+  font-weight: 700; /*peso do negrito*/
+}
+.container__imagem {
+  margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.secundario__imagen{
+    width: 80%; /*deixando a imagem responsivo p/ ñ sobrepor o texto em mobile*, 80% da coluna*/
+}
+.secundario{
+    align-items: center; /*alinhado no centro na coluna*/
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
